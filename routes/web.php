@@ -21,9 +21,5 @@ Route::get('/', function () {
 Route::controller(ProductController::class)->group(function () {
     Route::get('product', 'index')->name('product.index');
     Route::get('produt/{produt}', 'show')->name('product.show');
-    /* Route::get('curso/create', 'create')->name('curso.create');
-    Route::post('curso', 'store')->name('curso.store');
-    Route::get('curso/{curso}', 'show')->name('curso.show');
-    Route::get('curso/{curso}/edit', 'edit')->name('curso.edit');
-    Route::put('curso/{curso}', 'update')->name('curso.update'); */
+    //Route::get('product/{product}/edit', 'edit')->name('product.edit');
 });
